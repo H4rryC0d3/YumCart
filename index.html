@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry's Restaurant - Authentic Indian Vegetarian Cuisine</title>
+    <link href="style.css" rel="stylesheet"> 
+    
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="logo">HARRY'S <span>RESTAURANT</span></div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#booking">Book Table</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="hero-slider">
+            <div class="slider-track">
+                <div class="slide slide1 active"></div>
+                <div class="slide slide2"></div>
+                <div class="slide slide3"></div>
+            </div>
+        </div>
+        <button class="slider-nav prev" onclick="changeSlide(-1)">‹</button>
+        <button class="slider-nav next" onclick="changeSlide(1)">›</button>
+        <div class="slider-indicators">
+            <span class="indicator active" onclick="goToSlide(0)"></span>
+            <span class="indicator" onclick="goToSlide(1)"></span>
+            <span class="indicator" onclick="goToSlide(2)"></span>
+        </div>
+        <div class="hero-content">
+            <h1>Harry's Restaurant</h1>
+            <p class="hero-tagline">Authentic Indian Vegetarian Cuisine</p>
+            <p>Experience the rich heritage and exquisite flavors of traditional Indian vegetarian dishes, prepared with passion and served with care.</p>
+            <a href="#booking" class="cta-button">Reserve Your Table</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Our Restaurant</h2>
+            <p class="section-subtitle">Celebrating 15 Years of Culinary Excellence</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Since 2010, Harry's Restaurant has been a cornerstone of authentic Indian vegetarian cuisine, bringing the vibrant flavors and time-honored recipes of India to discerning diners. Our commitment to quality, authenticity, and exceptional service has made us a beloved destination for food enthusiasts.</p>
+                    <p>Our expert chefs craft each dish using traditional techniques passed down through generations, combined with the finest ingredients sourced locally and imported directly from India. Every meal at Harry's is a journey through India's diverse culinary landscape.</p>
+                    <p>We believe that vegetarian cuisine is not just about abstaining from meat—it's a celebration of vegetables, legumes, grains, and spices in their most glorious forms. Our menu showcases the incredible diversity and sophistication of Indian vegetarian cooking.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature-box">
+                        <h4>Fresh Ingredients</h4>
+                        <p>Locally sourced produce and authentic Indian spices</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Expert Chefs</h4>
+                        <p>Trained in traditional Indian culinary arts</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>Warm Ambiance</h4>
+                        <p>Elegant dining experience for all occasions</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>100% Vegetarian</h4>
+                        <p>Pure vegetarian kitchen with no compromises</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <section id="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p class="section-subtitle">A Symphony of Authentic Indian Flavors</p>
+            <div class="menu-grid">
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/paneer.webp" alt="Paneer Tikka Masala"></div>
+                    <div class="menu-item-content">
+                        <h3>Paneer Tikka Masala</h3>
+                        <p>Marinated cottage cheese grilled and simmered in rich creamy tomato gravy with aromatic spices</p>
+                        <span class="price">₹280</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/dal.webp" alt="Dal Makhani"></div>
+                    <div class="menu-item-content">
+                        <h3>Dal Makhani</h3>
+                        <p>Black lentils and kidney beans slow-cooked overnight with butter, cream, and traditional spices</p>
+                        <span class="price">₹220</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/palak.webp" alt="Palak Paneer"></div>
+                    <div class="menu-item-content">
+                        <h3>Palak Paneer</h3>
+                        <p>Fresh spinach purée with cottage cheese cubes, delicately spiced with garlic and garam masala</p>
+                        <span class="price">₹260</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/chole.webp" alt="Chole Bhature"></div>
+                    <div class="menu-item-content">
+                        <h3>Chole Bhature</h3>
+                        <p>Spiced chickpea curry served with fluffy deep-fried leavened bread, a North Indian classic</p>
+                        <span class="price">₹180</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/malai.webp" alt="Malai Kofta"></div>
+                    <div class="menu-item-content">
+                        <h3>Malai Kofta</h3>
+                        <p>Deep-fried potato and paneer dumplings in velvety cashew and tomato cream sauce</p>
+                        <span class="price">₹270</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/vegetables.webp" alt="Vegetable Biryani"></div>
+                    <div class="menu-item-content">
+                        <h3>Vegetable Biryani</h3>
+                        <p>Fragrant basmati rice layered with seasonal vegetables, saffron, and aromatic Indian spices</p>
+                        <span class="price">₹250</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/gobi.webp" alt="Aloo Gobi"></div>
+                    <div class="menu-item-content">
+                        <h3>Aloo Gobi</h3>
+                        <p>Cauliflower and potatoes cooked with turmeric, cumin, and traditional Punjabi spices</p>
+                        <span class="price">₹200</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/rajma.webp" alt="Rajma Masala"></div>
+                    <div class="menu-item-content">
+                        <h3>Rajma Masala</h3>
+                        <p>Red kidney beans in thick spiced tomato-onion gravy, a comfort food favorite</p>
+                        <span class="price">₹210</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/bharta.webp" alt="Baingan Bharta"></div>
+                    <div class="menu-item-content">
+                        <h3>Baingan Bharta</h3>
+                        <p>Char-grilled eggplant mash with tomatoes, onions, and aromatic herbs</p>
+                        <span class="price">₹230</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/shahi paneer.webp" alt="Shahi Paneer"></div>
+                    <div class="menu-item-content">
+                        <h3>Shahi Paneer</h3>
+                        <p>Royal cottage cheese in rich cashew gravy with saffron, cream, and exotic spices</p>
+                        <span class="price">₹290</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/mashroom.webp" alt="Mushroom Masala"></div>
+                    <div class="menu-item-content">
+                        <h3>Mushroom Masala</h3>
+                        <p>Button mushrooms in spicy onion-tomato gravy with bell peppers and aromatic spices</p>
+                        <span class="price">₹240</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/mix.webp" alt="Mix Vegetable Curry"></div>
+                    <div class="menu-item-content">
+                        <h3>Mix Vegetable Curry</h3>
+                        <p>Seasonal vegetables in traditional curry sauce with fenugreek and coriander</p>
+                        <span class="price">₹220</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/paneerb.webp" alt="Paneer Butter Masala"></div>
+                    <div class="menu-item-content">
+                        <h3>Paneer Butter Masala</h3>
+                        <p>Cottage cheese cubes in smooth buttery tomato sauce, mildly spiced and creamy</p>
+                        <span class="price">₹280</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/paneerk.webp" alt="Kadai Paneer"></div>
+                    <div class="menu-item-content">
+                        <h3>Kadai Paneer</h3>
+                        <p>Cottage cheese with bell peppers and onions in aromatic kadai masala gravy</p>
+                        <span class="price">₹270</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/vegk.webp" alt="Veg Kolhapuri"></div>
+                    <div class="menu-item-content">
+                        <h3>Veg Kolhapuri</h3>
+                        <p>Mixed vegetables in fiery Kolhapuri-style gravy with roasted spices and coconut</p>
+                        <span class="price">₹250</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/navratna.webp" alt="Navratan Korma"></div>
+                    <div class="menu-item-content">
+                        <h3>Navratan Korma</h3>
+                        <p>Nine vegetables and dry fruits in creamy cashew-almond gravy with mild spices</p>
+                        <span class="price">₹260</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/chana.webp" alt="Chana Masala"></div>
+                    <div class="menu-item-content">
+                        <h3>Chana Masala</h3>
+                        <p>Chickpeas cooked in tangy tomato-onion gravy with ginger, garlic, and chole masala</p>
+                        <span class="price">₹200</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/vegj.webp" alt="Veg Jalfrezi"></div>
+                    <div class="menu-item-content">
+                        <h3>Veg Jalfrezi</h3>
+                        <p>Stir-fried mixed vegetables with tomatoes and bell peppers in thick spiced gravy</p>
+                        <span class="price">₹240</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/dumaloo.webp" alt="Dum Aloo Kashmiri"></div>
+                    <div class="menu-item-content">
+                        <h3>Dum Aloo Kashmiri</h3>
+                        <p>Baby potatoes cooked in yogurt-based Kashmiri gravy with fennel and dried ginger</p>
+                        <span class="price">₹230</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/bhindi.webp" alt="Bhindi Masala"></div>
+                    <div class="menu-item-content">
+                        <h3>Bhindi Masala</h3>
+                        <p>Crispy okra sautéed with onions, tomatoes, and traditional North Indian spices</p>
+                        <span class="price">₹210</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/malai.webp" alt="Methi Malai Matar"></div>
+                    <div class="menu-item-content">
+                        <h3>Methi Malai Matar</h3>
+                        <p>Fresh fenugreek leaves and green peas in rich creamy cashew-based sauce</p>
+                        <span class="price">₹250</span>
+                    </div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-image"><img src="images/veghedra.webp" alt="Veg Hyderabadi"></div>
+                    <div class="menu-item-content">
+                        <h3>Veg Hyderabadi</h3>
+                        <p>Mixed vegetables in authentic Hyderabadi gravy with peanuts, sesame, and tamarind</p>
+                        <span class="price">₹260</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="reviews">
+        <div class="container">
+            <h2>Guest Testimonials</h2>
+            <p class="section-subtitle">What Our Valued Customers Say</p>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The best Indian vegetarian food I've experienced outside of India. The Paneer Tikka Masala is absolutely divine, and the service is impeccable. Harry's has become our family's favorite restaurant."</p>
+                    <p class="reviewer">— Priya Sharma</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Authentic flavors that remind me of home-cooked meals. The Dal Makhani is cooked to absolute perfection. The ambiance is warm and inviting, perfect for special occasions."</p>
+                    <p class="reviewer">— Rahul Verma</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Outstanding food quality and presentation. The Chole Bhature took me back to the streets of Delhi. Every dish is prepared with such care and attention to detail."</p>
+                    <p class="reviewer">— Anjali Patel</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Every dish bursts with authentic flavors. The spices are perfectly balanced, never overwhelming. Harry's truly understands the art of Indian vegetarian cuisine."</p>
+                    <p class="reviewer">— Amit Singh</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"The Malai Kofta melts in your mouth. Exceptional vegetarian options that even non-vegetarians rave about. This restaurant is a true gem in our city."</p>
+                    <p class="reviewer">— Neha Reddy</p>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p class="review-text">"Traditional taste meets modern presentation beautifully. The Vegetable Biryani is aromatic and perfectly spiced. We celebrate every special moment here."</p>
+                    <p class="reviewer">— Vikram Mehta</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="booking">
+        <div class="container">
+            <h2>Reserve Your Table</h2>
+            <p class="section-subtitle">Join Us for an Unforgettable Dining Experience</p>
+            <form class="booking-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="guests">Number of Guests</label>
+                        <select id="guests" name="guests" required>
+                            <option value="">Select...</option>
+                            <option value="1">1 Guest</option>
+                            <option value="2">2 Guests</option>
+                            <option value="3">3 Guests</option>
+                            <option value="4">4 Guests</option>
+                            <option value="5">5 Guests</option>
+                            <option value="6">6 Guests</option>
+                            <option value="7+">7+ Guests</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">Reservation Date</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">Reservation Time</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Requests (Optional)</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Dietary restrictions, celebrations, seating preferences..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Confirm Reservation</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Harry's Restaurant</h3>
+                <p>Serving authentic Indian vegetarian cuisine with love, tradition, and excellence since 2010.</p>
+                <p>We are committed to providing an exceptional dining experience with every visit.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Information</h3>
+                <p>📍 123 Food Street, Hyderabad</p>
+                <p> 📞+91 98765 43210</p>
+                <p>✉️ reservations@harrysrestaurant.com</p>
+            </div>
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p><strong>Monday - Friday</strong><br>11:00 AM - 11:00 PM</p>
+                <p><strong>Saturday - Sunday</strong><br>10:00 AM - 12:00 AM</p>
+                <p><strong>Kitchen Closes:</strong> 30 minutes before closing</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 Harry's Restaurant. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            currentSlide = (n + totalSlides) % totalSlides;
+            
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(direction) {
+            showSlide(currentSlide + direction);
+        }
+
+        function goToSlide(n) {
+            showSlide(n);
+        }
+
+        // Auto-play slider
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+    </script>
+</body>
+</html>
